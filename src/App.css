@@ -1,0 +1,40 @@
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.border-animation {
+  padding: 0.1px;
+}
+
+.border-animation::after,
+.border-animation::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+  inset: 0;
+  background: conic-gradient(
+    from var(--angle),
+    transparent 70%,
+    rgba(127, 0, 255, 0.5)
+  );
+  border-radius: 9999px;
+  animation: borderMove 3s linear infinite;
+}
+
+.border-animation::before {
+  filter: blur(2rem);
+  opacity: 0.2;
+}
+
+@keyframes borderMove {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
