@@ -17,7 +17,7 @@ const Button = forwardRef<HTMLButtonElement, IButton>(function Button(
 ) {
   const variantStyles = {
     primary:
-      "relative bg-background border-foreground/5 text-foreground/70 after:absolute after:w-40 after:h-full after:-bottom-[35px] after:bg-primary/70 after:rounded-[50%] after:shadow-[inset_0px_0px_20px_20px_rgba(127,0,255,0.9)] after:shadow-[0px_0px_4px_2px_rgba(127,0,255,0.4)]",
+      "relative bg-background border-foreground/10 text-foreground/70 after:absolute after:w-40 after:h-full after:-bottom-[35px] after:bg-primary/70 after:rounded-[50%] after:shadow-[inset_0px_0px_20px_20px_rgba(127,0,255,0.9)] after:shadow-[0px_0px_4px_2px_rgba(127,0,255,0.4)]",
     ghost: "",
     icon: "gap-2",
   };

@@ -7,6 +7,10 @@ const Hero = () => {
         <span>Access your favorite</span>
         <span className=" text-primary">ChatGPT chats easily</span>
       </h1>
+      <p className=" text-lg text-foreground/50 w-[65%] text-center">
+        A Chrome Extension that lets you mark your ChatGPT chats as favorites
+        for quick access
+      </p>
       <Button>Add to chrome</Button>
     </div>
   );
