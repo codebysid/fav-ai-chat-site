@@ -6,7 +6,7 @@ interface IVideo {
 const Video = ({ src, className }: IVideo) => {
   return (
     <video
-      className={`w-3/4 rounded-2xl ${className}`}
+      className={`w-3/4 rounded-2xl ${className} tiltedAnimation`}
       autoPlay
       loop
       muted
