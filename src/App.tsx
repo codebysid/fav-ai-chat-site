@@ -2,6 +2,8 @@ import "./App.css";
 import Hero from "./components/Hero";
 import Logo from "./components/Logo";
 import Video from "./components/ui/Video";
+import { twitterReviewsId } from "./utils/constants";
+import InfiniteScroll from "./components/InfiniteScroll";
 
 function App() {
   return (
@@ -9,6 +11,19 @@ function App() {
       <Logo />
       <Hero />
       <Video src="/demo.mp4" />
+      <div className=" w-full">
+        <h1 className=" text-center text-4xl font-bold pb-14">Reviews</h1>
+        <div className="px-44">
+          <InfiniteScroll
+            scrollData={twitterReviewsId}
+            scrollDirection="left"
+          />
+          <InfiniteScroll
+            scrollData={twitterReviewsId}
+            scrollDirection="right"
+          />
+        </div>
+      </div>
     </div>
   );
 }

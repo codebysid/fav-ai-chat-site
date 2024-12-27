@@ -54,3 +54,24 @@
     linear-gradient(rgba(0, 0, 0, 0.1) 2px, transparent 2px);
   background-size: 20px 20px;
 }
+
+.scroll-content-left {
+  animation: scroll 30s linear infinite;
+}
+
+.scroll-content-right {
+  animation: scroll 30s linear infinite reverse;
+}
+
+.scroll-content-left:hover,
+.scroll-content-right:hover {
+  animation-play-state: paused;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
