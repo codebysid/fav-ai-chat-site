@@ -5,7 +5,7 @@
 }
 
 .border-animation {
-  padding: 0.1px;
+  padding: 0.5px;
 }
 
 .border-animation::after,
@@ -52,6 +52,5 @@
       transparent 2px
     ),
     linear-gradient(rgba(0, 0, 0, 0.1) 2px, transparent 2px);
-  background-size: 70px 70px;
-  mix-blend-mode: luminosity;
+  background-size: 20px 20px;
 }
