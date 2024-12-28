@@ -25,7 +25,7 @@ const Button = forwardRef<HTMLButtonElement, IButton>(function Button(
     <div className="relative z-10 border-animation rounded-full">
       <button
         ref={ref}
-        className={`flex flex-row justify-center items-center px-4 py-[6px] rounded-3xl transition-all duration-300 border border-transparent whitespace-nowrap cursor-pointer overflow-hidden ${
+        className={`flex flex-row justify-center items-center px-4 py-[6px] rounded-3xl transition-all duration-300 border border-transparent whitespace-nowrap overflow-hidden ${
           variantStyles[variant]
         } ${icon && variantStyles.icon} ${className}`}
         onClick={onClick}
