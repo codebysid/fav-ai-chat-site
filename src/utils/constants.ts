@@ -8,3 +8,25 @@ export const twitterReviewsId = [
   "1872335319737253970",
   "1872354746553827816",
 ];
+
+export const keyFeatures = [
+  {
+    id: 1,
+    title: "One Click Favorite",
+    subTitle: "Click on the little heart 🤍 and mark the chat as favorite",
+    img: "/feature1.png",
+  },
+  {
+    id: 2,
+    title: "Access Favorite Chats",
+    subTitle: "Click on Fav Chats ❤️ button to access all your favorite chats",
+    img: "/feature2.png",
+  },
+  {
+    id: 3,
+    title: "Remove Favorite Chats",
+    subTitle:
+      "Click on the 🗑️ icon on favorite chats to remove them from favorite's",
+    img: "/feature3.png",
+  },
+];

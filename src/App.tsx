@@ -1,6 +1,7 @@
 import "./App.css";
 import DemoVideo from "./components/DemoVideo";
 import Hero from "./components/Hero";
+import KeyFeatures from "./components/KeyFeatures";
 import Logo from "./components/Logo";
 import Reviews from "./components/Reviews";
 
@@ -10,6 +11,7 @@ function App() {
       <Logo />
       <Hero />
       <DemoVideo />
+      <KeyFeatures />
       <Reviews />
     </div>
   );
