@@ -3,7 +3,7 @@ import FeatureCard from "./FeatureCard";
 
 const KeyFeatures = () => {
   return (
-    <div className=" pt-20">
+    <div className=" pt-20 pop-animation">
       <h1 className=" text-center text-4xl font-bold pb-14">
         Make ChatGPT{" "}
         <span className=" text-primary/70 underline underline-offset-4">
