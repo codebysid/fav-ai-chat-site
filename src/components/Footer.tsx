@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="flex flex-row justify-around items-start w-full border-t border-primary/30 py-10 shadow-[0px_0px_100px_1px_rgba(127,0,255,0.3)]">
         <div className=" space-y-4">
           <Logo />
-          <p>Built by Siddhant Jain</p>
+          <p className="pl-4">Built by Siddhant Jain</p>
         </div>
         <div className=" space-y-4">
           <p className=" text-foreground/50 font-medium text-xl">Contact</p>
