@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import KeyFeatures from "./components/KeyFeatures";
 import Logo from "./components/Logo";
 import Reviews from "./components/Reviews";
+import ZeroCost from "./components/ZeroCost";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <DemoVideo />
       <KeyFeatures />
+      <ZeroCost />
       <Reviews />
     </div>
   );

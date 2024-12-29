@@ -25,8 +25,7 @@ export const keyFeatures = [
   {
     id: 3,
     title: "Remove Favorite Chats",
-    subTitle:
-      "Click on the 🗑️ icon on favorite chats to remove them from favorite's",
+    subTitle: "Click on the 🗑️ to remove it from favorite's",
     img: "/feature3.png",
   },
 ];

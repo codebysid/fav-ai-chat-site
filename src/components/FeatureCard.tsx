@@ -15,7 +15,7 @@ const FeatureCard = ({
     <div
       className={`${
         isLastElement ? "flex-1 basis-full" : "flex-1 basis-[calc(50%-40px)]"
-      } border border-foreground/20 p-10 rounded-lg flex flex-col gap-5`}
+      } border border-foreground/20 p-10 rounded-lg flex flex-col gap-5 hover:bg-primary/20 transition-all duration-300 hover:scale-105`}
     >
       <div>
         <h2 className=" text-2xl font-medium">{title}</h2>

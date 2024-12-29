@@ -5,7 +5,7 @@
 }
 
 .border-animation {
-  padding: 0.5px;
+  padding: 2px 2px 0px 2px;
 }
 
 .border-animation::after,
@@ -86,6 +86,10 @@
   animation-timeline: view(75% 5%);
 }
 
+.tilt {
+  transform: rotateX(45deg) scale(1.2);
+}
+
 @keyframes tiltedAnimation {
   from {
     transform: rotateX(45deg) scale(1.2);
@@ -93,5 +97,55 @@
   to {
     transform: rotateX(0deg) scale(1);
     box-shadow: 0px 0px 200px 3px rgba(127, 0, 255, 0.3);
+  }
+}
+
+/* CSS generarator */
+.wavy-background {
+  mask: radial-gradient(
+        45.1px at calc(100% + 33px) 50%,
+        #0000 calc(99% - 1px),
+        #000 calc(101% - 1px) 99%,
+        #0000 101%
+      )
+      calc(50% - 15.5px + 0.5px) calc(50% - 60px) / 31px 120px,
+    radial-gradient(
+        45.1px at -33px 50%,
+        #0000 calc(99% - 1px),
+        #000 calc(101% - 1px) 99%,
+        #0000 101%
+      )
+      calc(50% + 15.5px) 50%/31px 120px;
+  background: rgba(127, 0, 255, 0.3);
+  animation: wavy-random 3s infinite alternate linear;
+}
+
+/* chatgpt generated */
+@keyframes wavy-random {
+  0% {
+    mask-size: 31px 120px, 31px 120px;
+    -webkit-mask-size: 31px 120px, 31px 120px;
+    mask-position: calc(50% - 15.5px + 0.5px) calc(50% - 60px),
+      calc(50% + 15.5px) 50%;
+    -webkit-mask-position: calc(50% - 15.5px + 0.5px) calc(50% - 60px),
+      calc(50% + 15.5px) 50%;
+    background: rgba(127, 0, 255, 0.3);
+  }
+  50% {
+    mask-size: 33px 125px, 33px 125px;
+    -webkit-mask-size: 33px 125px, 33px 125px;
+    mask-position: calc(50% - 20px) calc(50% - 65px), calc(50% + 20px) 50%;
+    -webkit-mask-position: calc(50% - 20px) calc(50% - 65px),
+      calc(50% + 20px) 50%;
+    background: rgba(127, 0, 255, 0.1);
+  }
+  100% {
+    mask-size: 31px 120px, 31px 120px;
+    -webkit-mask-size: 31px 120px, 31px 120px;
+    mask-position: calc(50% - 15.5px + 0.5px) calc(50% - 60px),
+      calc(50% + 15.5px) 50%;
+    -webkit-mask-position: calc(50% - 15.5px + 0.5px) calc(50% - 60px),
+      calc(50% + 15.5px) 50%;
+    background: rgba(127, 0, 255, 0.5);
   }
 }
