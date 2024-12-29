@@ -1,5 +1,6 @@
 import "./App.css";
 import DemoVideo from "./components/DemoVideo";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import KeyFeatures from "./components/KeyFeatures";
 import Logo from "./components/Logo";
@@ -15,6 +16,7 @@ function App() {
       <KeyFeatures />
       <ZeroCost />
       <Reviews />
+      <Footer />
     </div>
   );
 }

@@ -29,3 +29,17 @@ export const keyFeatures = [
     img: "/feature3.png",
   },
 ];
+
+export const socialHandles = [
+  { id: 1, title: "X [Twitter] ↗", link: "https://x.com/codebysid" },
+  {
+    id: 2,
+    title: "Github ↗",
+    link: "https://github.com/codebysid",
+  },
+  {
+    id: 3,
+    link: "https://linkedin.com/in/SiddhantJainnn",
+    title: "LinkedIn ↗",
+  },
+];

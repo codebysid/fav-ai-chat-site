@@ -11,7 +11,7 @@ const Hero = () => {
         A Chrome Extension that lets you mark your ChatGPT chats as favorites
         for quick access
       </p>
-      <AddToChromeBtn className="" />
+      <AddToChromeBtn />
     </div>
   );
 };
