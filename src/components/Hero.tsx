@@ -11,6 +11,11 @@ const Hero = () => {
         A Chrome Extension that lets you mark your ChatGPT chats as favorites
         for quick access
       </p>
+      <img
+        src="/peerlist_launch.svg"
+        alt="peerlist launch badge"
+        className="w-[25%] py-2 lg:py-0"
+      />
       <AddToChromeBtn />
     </div>
   );
