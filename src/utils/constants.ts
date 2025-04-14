@@ -44,3 +44,16 @@ export const socialHandles = [
     title: "LinkedIn ↗",
   },
 ];
+
+export const footerWhatsFavAiChatLinks = [
+  {
+    id: 1,
+    title: "Watch Demo",
+    link: ""
+  },
+  {
+    id: 2,
+    title: "Read Reviews on X",
+    link: "https://x.com/codebysid/status/1872276957708288100"
+  }
+]

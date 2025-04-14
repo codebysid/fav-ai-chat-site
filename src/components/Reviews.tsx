@@ -10,7 +10,7 @@ const Reviews = () => {
           Feedback
         </span>
       </h1>
-      <div className="lg:px-44">
+      <div>
         <InfiniteScroll scrollData={twitterReviewsId} scrollDirection="left" />
         <InfiniteScroll scrollData={twitterReviewsId} scrollDirection="right" />
       </div>

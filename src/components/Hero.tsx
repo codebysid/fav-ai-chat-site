@@ -2,7 +2,7 @@ import AddToChromeBtn from "./AddToChromeBtn";
 
 const Hero = () => {
   return (
-    <div className="relative flex flex-row justify-between items-start pt-6 lg:pt-0 md:pt-0 lg:items-end md:items-end min-h-screen pb-10 px-10 grid-background">
+    <div className="relative flex flex-col lg:flex-row md:flex-row justify-around lg:justify-between md:justify-between items-start lg:items-end md:items-end min-h-screen pb-10 px-10 grid-background z-0">
       <div className="flex flex-col justify-end items-start gap-5 lg:gap-4 z-40">
         <img
           src="/peerlist_launch.svg"
@@ -18,7 +18,7 @@ const Hero = () => {
           for quick access
         </p>
       </div>
-      <div className="absolute lg:pulse-effect rounded-full bottom-20 right-20">
+      <div className="lg:absolute pulse-effect rounded-full bottom-20 right-20">
         <AddToChromeBtn />
       </div>
     </div>
