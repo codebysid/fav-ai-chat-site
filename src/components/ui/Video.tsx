@@ -1,11 +1,15 @@
+import { RefObject } from "react";
+
 interface IVideo {
   src: string;
   className?: string;
+  videoRef?: RefObject<HTMLVideoElement>
 }
 
-const Video = ({ src, className }: IVideo) => {
+const Video = ({ src, className, videoRef }: IVideo) => {
   return (
     <video
+      ref={videoRef}
       className={`w-[70%] rounded-2xl ${className} tiltedAnimation border-2 lg:border-4 border-foreground/50`}
       autoPlay
       loop

@@ -1,12 +1,13 @@
 export const twitterReviewsId = [
-  "1872278869547667587",
   "1872336634777358696",
   "1872352574684426610",
   "1872303740461658323",
-  "1872318677020008816",
+  "1874158254403846385",
   "1872357881494085750",
   "1872335319737253970",
   "1872354746553827816",
+  "1872278869547667587",
+  "1872318677020008816",
 ];
 
 export const keyFeatures = [
@@ -43,3 +44,16 @@ export const socialHandles = [
     title: "LinkedIn ↗",
   },
 ];
+
+export const footerWhatsFavAiChatLinks = [
+  {
+    id: 1,
+    title: "Watch Demo",
+    link: ""
+  },
+  {
+    id: 2,
+    title: "Read Reviews on X",
+    link: "https://x.com/codebysid/status/1872276957708288100"
+  }
+]

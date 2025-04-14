@@ -8,7 +8,7 @@ interface IButton {
   children?: ReactNode;
   type?: "submit" | "button" | "reset";
   ref?: RefObject<HTMLButtonElement>;
-  variant?: "primary" | "ghost";
+  variant?: "primary" | "ghost" | "animated";
 }
 
 const Button = forwardRef<HTMLButtonElement, IButton>(function Button(
@@ -16,18 +16,18 @@ const Button = forwardRef<HTMLButtonElement, IButton>(function Button(
   ref
 ) {
   const variantStyles = {
-    primary:
+    animated:
       "relative bg-background border border-primary/30 text-foreground/70 after:absolute after:w-40 after:h-full after:-bottom-[35px] after:bg-primary/70 after:rounded-[50%] after:shadow-[inset_0px_0px_20px_20px_rgba(127,0,255,0.9)] after:shadow-[0px_0px_4px_2px_rgba(127,0,255,0.4)]",
     ghost: "",
     icon: "gap-2",
+    primary: "bg-white text-black font-medium"
   };
   return (
-    <div className="relative z-10 border-animation rounded-full">
+    <div className={` ${variant == "animated" ? "relative z-10 border-animation rounded-full" : ``} `}>
       <button
         ref={ref}
-        className={`flex flex-row justify-center items-center px-4 py-[6px] rounded-3xl transition-all duration-300 border border-transparent whitespace-nowrap overflow-hidden ${
-          variantStyles[variant]
-        } ${icon && variantStyles.icon} ${className}`}
+        className={`flex flex-row justify-center items-center px-4 py-[6px] rounded-3xl transition-all duration-300 border border-transparent whitespace-nowrap overflow-hidden cursor-pointer hover:opacity-80 ${variantStyles[variant]
+          } ${icon && variantStyles.icon} ${className}`}
         onClick={onClick}
         disabled={disabled}
         type={type}

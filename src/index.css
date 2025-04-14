@@ -1,18 +1,48 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-.dark {
+:root {
   --background: 0, 0, 0;
   --foreground: 255, 255, 255;
   --primary: 127, 0, 255;
+  --tweet-bg: #0f172a;
+  --tweet-color-primary: #14b8a6;
+  --tweet-color-text: #e2e8f0;
+  --tweet-border: #334155;
 }
 
-* {
+@theme {
+  --color-primary: rgba(var(--primary));
+  --color-background: rgba(var(--background));
+  --color-foreground: rgba(var(--foreground));
+  --color-tweet-bg: var(--tweet-bg);
+  --color-tweet-color-primary: var(--tweet-color-primary);
+  --color-tweet-color-text: var(--tweet-color-text);
+  --color-tweet-border: var(--tweet-border);
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+/* * {
   cursor: url("cursor.png"), auto;
 }
 
 button,
 a {
   cursor: url("cursor_pointer.png"), auto;
-}
+} */

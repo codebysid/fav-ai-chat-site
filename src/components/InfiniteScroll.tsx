@@ -11,17 +11,18 @@ const InfiniteScroll = ({ scrollData, scrollDirection }: IExamples) => {
     right: `scroll-content-right`,
   };
   return (
-    <div className="flex h-52 lg:h-60 text-sm overflow-hidden relative after:absolute after:h-full after:w-0 after:left-0 after:shadow-[0px_0px_30px_30px_rgba(0,0,0)] before:absolute before:h-full before:z-30 before:w-0 before:right-0 before:shadow-[0px_0px_30px_30px_rgba(0,0,0)]">
-      <div className={`flex gap-10 ${styles[scrollDirection]} `}>
+    <div className="flex h-52 lg:h-60 text-sm overflow-hidden relative after:absolute after:h-full after:w-0 after:-left-5 after:shadow-[0px_0px_30px_30px_rgba(0,0,0)] before:absolute before:h-full before:z-30 before:w-0 before:-right-5 before:shadow-[0px_0px_30px_30px_rgba(0,0,0)]">
+      <div className={`flex gap-10 ${styles[scrollDirection]} `}
+      >
         {scrollData &&
           scrollData.map((tweetId) => (
-            <span key={tweetId} className=" clickAble">
+            <span key={tweetId}>
               <Tweet id={tweetId} />
             </span>
           ))}
         {scrollData &&
           scrollData.map((tweetId) => (
-            <span key={tweetId} className=" clickAble">
+            <span key={tweetId}>
               <Tweet id={tweetId} />
             </span>
           ))}
